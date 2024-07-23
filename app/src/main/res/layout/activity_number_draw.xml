@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- 规则说明 -->
+    <TextView
+        android:id="@+id/ruleTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Select the number of draws (1 to 5):"
+        android:textSize="16sp"
+        android:paddingBottom="8dp" />
+
+    <!-- 下拉列表 -->
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/number_options" />
+
+    <!-- 按钮 -->
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Draw Numbers"
+        android:layout_marginTop="16dp" />
+
+    <!-- 显示结果 -->
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Selected numbers will be shown here"
+        android:paddingTop="16dp"
+        android:textSize="16sp" />
+</LinearLayout>
